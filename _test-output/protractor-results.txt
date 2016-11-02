@@ -1,0 +1,7 @@
+Protractor results for: 2016-11-02 11:11:13
+
+AppDir:./
+  Suite: QuickStart E2E Tests -- passed
+    passed - should open index page
+    passed - should display app.component heading
+

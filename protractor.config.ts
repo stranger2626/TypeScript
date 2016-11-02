@@ -22,10 +22,10 @@ exports.config = {
   baseUrl: 'http://localhost:8080',
 
   onPrepare: function() {
-    let globals = require('protractor');
-    let browser: ProtractorBrowser = globals.browser;
-    let Reporter = require('weird-reporter');
-    jasmine.getEnv().addReporter(new Reporter( browser.params ));
+      let globals = require('protractor');
+      let browser: ProtractorBrowser = globals.browser;
+      let Reporter_xlsx = require('reporter-xlsx');
+      jasmine.getEnv().addReporter(new Reporter_xlsx( browser.params ));
   },
 
   jasmineNodeOpts: {
