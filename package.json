@@ -4,7 +4,6 @@
   "description": "QuickStart package.json from the documentation, supplemented with testing support",
   "scripts": {
     "start": "tsc && concurrently \"tsc -w\" \"lite-server\" ",
-    "pree2e": "npm run webdriver:update",
     "e2e": "tsc && concurrently \"http-server -s\" \"protractor protractor.config.js\" --kill-others --success first",
     "lite": "lite-server",
     "tsc": "tsc",
@@ -53,7 +52,7 @@
     "rimraf": "^2.5.4",
     "typescript": "^2.0.3",
     "webdriver-manager": "10.2.5",
-    "reporter_xlsx": "Https://github.com/stranger2626/reporter_xlsx.git"
+    "reporter-xlsx": "git://github.com/stranger2626/reporter_xlsx.git"
   },
   "repository": {}
 }
